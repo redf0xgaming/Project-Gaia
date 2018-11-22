@@ -1,0 +1,2 @@
+//This decorate file contains all the definitions for brand new
+//monsters used in the game.

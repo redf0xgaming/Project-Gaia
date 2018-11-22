@@ -1,0 +1,5 @@
+#include 'actors/monsters.txt'
+#include 'actors/weapons.txt'
+#include 'actors/powerups.txt'
+#include 'actors/items.txt'
+#include 'actors/newdoommonsters.txt'

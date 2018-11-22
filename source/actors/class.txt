@@ -1,0 +1,5 @@
+actor GaiaSoldier : DoomPlayer
+{
+health 99
+maxhealth 199
+}

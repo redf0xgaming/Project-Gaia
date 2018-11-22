@@ -1,1 +1,192 @@
-//Soon to be updated mapinfo file
+clearepisodes
+clearskills
+
+episode intro
+{
+name = "Unnamed Planet"
+}
+
+cluster 1
+{
+hub
+}
+
+gameinfo
+{
+PlayerClasses = "NewPlayer"
+}
+
+map map01 "Planet Surface"
+{
+levelnum = 1
+nointermission
+next = "map02"
+sky1 = "stsky2", 0.0
+music = "music/surface.spc"
+cluster = 1
+}
+
+map map02 "Research Mines"
+{
+levelnum = 2
+nointermission
+next = "map03"
+sky1 = "sky1", 0.0
+music = "music/mines.spc"
+cluster = 1
+}
+
+map map03 "Underground Caves"
+{
+levelnum = 3
+nointermission
+next = "map04"
+sky1 = "sky1", 0.0
+music = "music/lowercaves.spc"
+cluster = 1
+}
+
+map map04 "Demonic Hives"
+{
+levelnum = 4
+nointermission
+next = "map05"
+music = "music/hives.spc"
+cluster = 1
+}
+
+map map05 "Demon Base"
+{
+levelnum = 5
+nointermission
+next = "endlevel"
+music = "music/hivessurface.spc"
+cluster = 1
+}
+
+map map06 "Mountain Sector"
+{
+levelnum = 6
+nointermission
+next = "endlevel"
+music = "music/caves.spc"
+cluster = 1
+}
+
+map map07 "Power Station"
+{
+levelnum = 7
+nointermission
+next = "endlevel"
+music = "music/wrecked.spc"
+cluster = 1
+}
+
+map map08 "Catacombs"
+{
+levelnum = 8
+nointermission
+next = "map09"
+music = "music/lowermines.spc"
+cluster = 1
+}
+
+map map09 "Lost Underworld"
+{
+levelnum = 9
+nointermission
+next = "endlevel"
+music = "music/base.spc"
+cluster = 1
+}
+
+map intro "Intro"
+{
+levelnum = 8
+nointermission
+next = "map01"
+music = "music/intro.spc"
+}
+
+map endlevel "Endgame"
+{
+levelnum = 9
+nointermission
+}
+
+map titlemap "Titlemap"
+{
+levelnum = 10
+sky1 = "sky1", 0.0
+}
+
+skill baby
+{
+MonsterHealth = 0.5
+AmmoFactor = 2.0
+name = "Very Easy"
+ArmorFactor = 2.0
+HealthFactor = 2.0
+EasyKey
+ACSReturn = 1
+Aggressiveness = 0.2
+DamageFactor = 0.5
+SpawnFilter = 1
+}
+
+skill easy
+{
+MonsterHealth = 0.75
+AmmoFactor = 1.0
+name = "Easy"
+ArmorFactor = 1.5
+HealthFactor = 1.5
+ACSReturn = 2
+Aggressiveness = 0.4
+DamageFactor = 0.75
+SpawnFilter = 2
+}
+
+skill normal
+{
+MonsterHealth = 1.0
+AmmoFactor = 1.0
+name = "Normal"
+ArmorFactor = 1.0
+HealthFactor = 1.0
+ACSReturn = 3
+Aggressiveness = 0.6
+DamageFactor = 1.0
+SpawnFilter = 3
+}
+
+skill hard
+{
+MonsterHealth = 1.5
+AmmoFactor = 1.0
+name = "Hard"
+ArmorFactor = 0.5
+HealthFactor = 0.5
+ACSReturn = 4
+Aggressiveness = 0.75
+DamageFactor = 1.5
+SpawnFilter = 4
+}
+
+skill nightmare
+{
+MonsterHealth = 2.0
+AmmoFactor = 2.0
+name = "Nightmare"
+ArmorFactor = 0.5
+HealthFactor = 0.5
+ACSReturn = 5
+FastMonsters
+MustConfirm
+RespawnLimit = 0
+RespawnTime = 60
+Aggressiveness = 1.0
+DamageFactor = 2.0
+NoPain
+SpawnFilter = 5
+}

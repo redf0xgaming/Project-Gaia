@@ -1,0 +1,47 @@
+//This file contains all the definitions for new weapons used
+//in the game.
+//Plasma Pistol (uses no ammo)
+//Energy Blade
+//Plasma Rifle
+//Beam Rifle
+//Railgun
+//DualLaser
+//BioForce Rifle
+//Missle Launcher
+//SuperMissle Launcher
+
+actor NewMissile : Rocket replaces Rocket
+{
+speed 8
+damage (random(1,4) * random(15,30) + 25)
+}
+
+actor SuperMissile : NewMissile
+{
+speed 12
+damage (random(4,8) * random(30,50) + 50)
+}
+
+actor MissileAmmo : RocketAmmo replaces RocketAmmo
+{
+Inventory.Amount 1
+Inventory.MaxAmount 5
+Ammo.BackpackAmount 1
+Ammo.BackpackMaxAmount 10
+}
+
+actor SuperMissileAmmo : MissileAmmo
+{
+Inventory.Amount 1
+Inventory.MaxAmount 5
+Ammo.BackpackAmount 1
+Ammo.BackpackAmount 10
+}
+
+actor NewCell : Cell replaces Cell
+{
+Inventory.Amount 20
+Inventory.MaxAmount 400
+Ammo.BackpackAmount 20
+Ammo.BackpackMaxAmount 800
+}
